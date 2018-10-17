@@ -21,6 +21,11 @@
     <dimen name="txt_6">24sp</dimen>
     <dimen name="txt_7">30sp</dimen>
 
+    <dimen name="bestsellerListItemWidth">270dp</dimen>
+    <dimen name="bestsellerListItemHeight">120dp</dimen>
+    <dimen name="bestsellerLogoWidth">50dp</dimen>
+    <dimen name="bestsellerLogoHeight">80dp</dimen>
+
     <dimen name="sideMenuListItemWidth">80dp</dimen>
     <dimen name="sideMenuListItemHeight">80dp</dimen>
 

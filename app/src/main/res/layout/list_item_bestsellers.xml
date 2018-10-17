@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/bestsellerListItemWidth"
+    android:layout_height="@dimen/bestsellerListItemHeight">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="@dimen/bestsellerLogoWidth"
+        android:layout_height="@dimen/bestsellerLogoHeight"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        tools:background="@mipmap/icon_bestseller1" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageViewLogo"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_toEndOf="@id/imageViewLogo"
+        android:layout_toLeftOf="@id/btnAdd"
+        android:layout_toRightOf="@id/imageViewLogo"
+        android:layout_toStartOf="@id/btnAdd"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        tools:text="Prada" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_above="@id/tvPrice"
+        android:layout_below="@+id/tvName"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_toEndOf="@id/imageViewLogo"
+        android:layout_toLeftOf="@id/btnAdd"
+        android:layout_toRightOf="@id/imageViewLogo"
+        android:layout_toStartOf="@id/btnAdd"
+        android:ellipsize="end"
+        tools:text="Here is long text" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageViewLogo"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_toEndOf="@id/imageViewLogo"
+        android:layout_toRightOf="@id/imageViewLogo"
+        android:textSize="@dimen/txt_1"
+        tools:text="200 AED" />
+
+    <TextView
+        android:id="@+id/tvPriceAfterDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvPrice"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_toEndOf="@id/tvPrice"
+        android:layout_toRightOf="@id/tvPrice"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/txt_1"
+        tools:text="150 AED" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_bg_add"
+        android:text="ADD"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

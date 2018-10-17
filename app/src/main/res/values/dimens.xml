@@ -26,6 +26,11 @@
     <dimen name="bestsellerLogoWidth">50dp</dimen>
     <dimen name="bestsellerLogoHeight">80dp</dimen>
 
+    <dimen name="categoryListItemWidth">280dp</dimen>
+    <dimen name="categoryListItemHeight">120dp</dimen>
+    <dimen name="categoryLogoWidth">40dp</dimen>
+    <dimen name="categoryLogoHeight">80dp</dimen>
+
     <dimen name="sideMenuListItemWidth">80dp</dimen>
     <dimen name="sideMenuListItemHeight">80dp</dimen>
 

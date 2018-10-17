@@ -1,9 +1,8 @@
 <resources>
-    <string name="app_name">GoldenScentApp</string>
+    <string name="app_name">Golden Scent</string>
     <string name="best_sellers">Bestsellers</string>
     <string name="view_all">View All</string>
+    <string name="view_all_lips">View All Lips</string>
     <string name="action_settings">Settings</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
 </resources>

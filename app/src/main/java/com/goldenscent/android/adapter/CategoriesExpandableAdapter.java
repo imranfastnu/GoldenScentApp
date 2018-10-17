@@ -152,10 +152,12 @@ public class CategoriesExpandableAdapter extends ExpandableRecyclerAdapter<Categ
 
         public SubCategory mSubCategory;
         public RecyclerView rvSubCategory;
+        public TextView tvViewAll;
 
         public SubCategoryViewHolder(View itemView) {
             super(itemView);
             rvSubCategory = (RecyclerView) itemView.findViewById(R.id.rvSubCategory);
+            tvViewAll = (TextView) itemView.findViewById(R.id.tvViewAll);
         }
 
         public void bind(@NonNull SubCategory subCategory) {

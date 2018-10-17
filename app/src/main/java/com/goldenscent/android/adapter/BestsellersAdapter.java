@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.goldenscent.android.R;
 import com.goldenscent.android.model.Product;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BestsellersAdapter extends RecyclerView.Adapter<BestsellersAdapter.ViewHolder> {
@@ -22,11 +23,27 @@ public class BestsellersAdapter extends RecyclerView.Adapter<BestsellersAdapter.
     private int mBackground;
     private List<Product> mValues;
 
-    public BestsellersAdapter(Context context, List<Product> items) {
+    public BestsellersAdapter(Context context) {
         context.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
         mBackground = mTypedValue.resourceId;
-        mValues = items;
+       initializeProduct();
     }
+
+    private void initializeProduct(){
+        mValues = new ArrayList<>();
+        mValues.add(new Product(R.mipmap.icon_bestseller1, "PRADA", "Candy", "348 SR", "121 SR"));
+        mValues.add(new Product(R.mipmap.icon_bestseller2, "Dolge & Gabana sweet perfume", "The one text goes here untill the end for the layout", "348 SR", ""));
+        mValues.add(new Product(R.mipmap.icon_bestseller3, "Aigner", "N. 1", "348 SR", ""));
+
+        mValues.add(new Product(R.mipmap.icon_bestseller1, "PRADA", "Candy", "348 SR", "121 SR"));
+        mValues.add(new Product(R.mipmap.icon_bestseller2, "Dolge & Gabana sweet perfume", "The one text goes here untill the end for the layout", "348 SR", ""));
+        mValues.add(new Product(R.mipmap.icon_bestseller3, "Aigner", "N. 1", "348 SR", ""));
+
+        mValues.add(new Product(R.mipmap.icon_bestseller1, "PRADA", "Candy", "348 SR", "121 SR"));
+        mValues.add(new Product(R.mipmap.icon_bestseller2, "Dolge & Gabana sweet perfume", "The one text goes here untill the end for the layout", "348 SR", ""));
+        mValues.add(new Product(R.mipmap.icon_bestseller3, "Aigner", "N. 1", "348 SR", ""));
+    }
+
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public Product mProduct;

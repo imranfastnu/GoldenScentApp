@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="@dimen/bestsellerListItemWidth"
-    android:layout_height="@dimen/bestsellerListItemHeight">
+    android:layout_height="@dimen/bestsellerListItemHeight"
+    android:foreground="?android:attr/selectableItemBackground">
 
     <ImageView
         android:id="@+id/imageViewLogo"
@@ -49,18 +50,20 @@
         android:id="@+id/tvPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_alignBottom="@id/imageViewLogo"
         android:layout_marginLeft="@dimen/margin_normal"
         android:layout_marginStart="@dimen/margin_normal"
         android:layout_toEndOf="@id/imageViewLogo"
         android:layout_toRightOf="@id/imageViewLogo"
         android:textSize="@dimen/txt_1"
-        tools:text="200 AED" />
+        tools:text="200 SR" />
 
     <TextView
         android:id="@+id/tvPriceAfterDiscount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_alignBaseline="@id/tvPrice"
         android:layout_marginLeft="@dimen/margin_normal"
         android:layout_marginStart="@dimen/margin_normal"
@@ -68,7 +71,7 @@
         android:layout_toRightOf="@id/tvPrice"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/txt_1"
-        tools:text="150 AED" />
+        tools:text="150 SR" />
 
     <Button
         android:id="@+id/btnAdd"
@@ -77,9 +80,19 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_small"
         android:background="@drawable/btn_bg_add"
         android:text="ADD"
         android:textAllCaps="true"
         android:textColor="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:background="@color/colorGrey4"
+        />
 
 </RelativeLayout>

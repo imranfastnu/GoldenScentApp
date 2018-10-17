@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false" android:drawable="@mipmap/icon_menu1" />
+    <item android:drawable="@mipmap/icon_menu2" />
+</selector>

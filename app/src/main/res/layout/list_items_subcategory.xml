@@ -27,5 +27,4 @@
         android:lines="1"
         tools:text="Pencils" />
 
-
 </LinearLayout>

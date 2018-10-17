@@ -1,0 +1,27 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="item_offset">2dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_normal2">12dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="margin_large">22dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="txt_1">12sp</dimen>
+    <dimen name="txt_1a">13sp</dimen>
+    <dimen name="txt_2">14sp</dimen>
+    <dimen name="txt_3">16sp</dimen>
+    <dimen name="txt_4">18sp</dimen>
+    <dimen name="txt_5">22sp</dimen>
+    <dimen name="txt_6">24sp</dimen>
+    <dimen name="txt_7">30sp</dimen>
+
+    <dimen name="sideMenuListItemWidth">80dp</dimen>
+    <dimen name="sideMenuListItemHeight">80dp</dimen>
+
+</resources>

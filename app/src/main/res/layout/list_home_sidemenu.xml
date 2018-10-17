@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.goldenscent.android.view.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/sideMenuListItemWidth"
+    android:layout_height="@dimen/sideMenuListItemHeight"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:duplicateParentState="true"
+            tools:background="@mipmap/icon_menu1" />
+
+       <View
+           android:id="@+id/viewDivider"
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:layout_gravity="bottom"
+           android:visibility="gone"
+           android:background="@color/colorGrey1"/>
+
+    </android.support.v7.widget.CardView>
+
+</com.goldenscent.android.view.CheckableLinearLayout>
